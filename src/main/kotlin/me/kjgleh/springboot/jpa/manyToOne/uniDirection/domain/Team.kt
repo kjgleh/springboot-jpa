@@ -1,4 +1,4 @@
-package me.kjgleh.springboot.jpa.manyToOne.uniDirection
+package me.kjgleh.springboot.jpa.manyToOne.uniDirection.domain
 
 import javax.persistence.*
 

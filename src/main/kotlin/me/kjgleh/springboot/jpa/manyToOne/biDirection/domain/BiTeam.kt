@@ -1,9 +1,9 @@
-package me.kjgleh.springboot.jpa.manyToOne.biDirection
+package me.kjgleh.springboot.jpa.manyToOne.biDirection.domain
 
 import javax.persistence.*
 
 @Entity(name = "bi_team")
-class Team(
+class BiTeam(
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -13,5 +13,5 @@ class Team(
     val name: String,
 
     @OneToMany(mappedBy = "team")
-    val members: List<Member>
+    val members: MutableList<BiMember>
 )

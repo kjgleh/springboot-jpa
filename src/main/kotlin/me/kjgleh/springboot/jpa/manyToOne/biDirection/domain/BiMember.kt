@@ -1,9 +1,9 @@
-package me.kjgleh.springboot.jpa.manyToOne.uniDirection
+package me.kjgleh.springboot.jpa.manyToOne.biDirection.domain
 
 import javax.persistence.*
 
-@Entity
-class Member(
+@Entity(name = "bi_member")
+class BiMember(
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -14,5 +14,5 @@ class Member(
 
     @ManyToOne
     @JoinColumn(name = "TEAM_ID")
-    val team: Team
+    val team: BiTeam
 )

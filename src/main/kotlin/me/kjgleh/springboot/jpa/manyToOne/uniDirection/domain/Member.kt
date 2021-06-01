@@ -1,8 +1,8 @@
-package me.kjgleh.springboot.jpa.manyToOne.biDirection
+package me.kjgleh.springboot.jpa.manyToOne.uniDirection.domain
 
 import javax.persistence.*
 
-@Entity(name = "bi_member")
+@Entity
 class Member(
 
     @Id
